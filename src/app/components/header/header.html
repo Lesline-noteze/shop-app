@@ -1,0 +1,15 @@
+<header>
+    <div id="logo">
+        <img [src]="logo" alt="logo shop-app">
+    </div>
+    <nav id="menu" [class.open]="menuOpen">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#product">Products</a> </li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#footer">Contact </a></li>
+        </ul>
+          
+    </nav>
+    <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+</header>

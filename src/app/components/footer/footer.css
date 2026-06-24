@@ -1,0 +1,25 @@
+footer{
+background-color: rgb(63, 152, 63);
+text-align: center;
+color: white;
+font-weight: bold;
+
+   
+}
+.footer{
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: white;
+     justify-content: space-around;
+}
+img{
+     height: 150px;
+}
+@media(max-width:600px){
+     .footer{
+          flex-direction: column;
+     }
+}
