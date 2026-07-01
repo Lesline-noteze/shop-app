@@ -6,7 +6,7 @@
     padding: 15px 25px;
     background-color: #2E7D32;
     color: white;
-    position: relative;
+    position: sticky;
 }
 
 #logo img{

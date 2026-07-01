@@ -1,9 +1,24 @@
 <div class="productlist" id="product">
-    @for (product of products;
-    track product.id){
-    <app-product-item [product]="product">
-       
-    </app-product-item>
+    @for (product of products(); track product.id){
+        <div class="product-card">
+            <img [src]="product.imageurl" [alt]="product.name">
+            <h3>{{product.name}}</h3>
+           <!-- <p class="a">Description:</p> -->
+            <p>{{product.description}}</p>
+            <!-- <p class="a">catégories :</p> -->
+            <p class="categories"><span>Catégorie</span> {{product.categories }}
+            </p>
+           <div>
+             <div class="price">
+                
+                <p class="sold"> <span>SoldPrice:</span>{{product.soldeprice | currency:'XAF':'symbol'}} </p>
+             
+                <p class="regular"><span>regularprice:</span> {{product.regularprice | currency:'XAF':'symbol'}} </p>
+            </div>
+           <button class="btn">Commander</button>
+           </div>
+        </div>
     }
+    
 
 </div>
